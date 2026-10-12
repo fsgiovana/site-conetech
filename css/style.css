@@ -37,7 +37,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 15px;
     padding: 10px 7%;
     border-bottom: 1px solid #d8dde5;
 }
@@ -96,8 +96,12 @@ main {
     border: 1px solid #e0e4ea;
     border-radius: 3px;
     overflow: hidden;
+    transition: transform 0.2s;
 }
 
+.card:hover {
+    transform: translateY(-4px);
+}
 .card > a {
     display: flex;
     flex-direction: column;
