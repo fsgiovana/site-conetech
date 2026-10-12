@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #333d49;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #263f68;
+    color: white;
+    text-align: left;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 0;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/*menu*/
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px 7%;
+    border-bottom: 1px solid #d8dde5;
+}
+
+nav a {
+    color: #263f68;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 2px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #5576a5;
+    background-color: #f0f3f7;
+}
+
+nav a.ativo {
+    background-color: #263f68;
+    color: white;
+}
+
+main {
+    width: 86%;
+    max-width: 1150px;
+    margin: 32px auto;
+}
+
+.apresentacao {
+    background-color: white;
+    padding: 26px 28px;
+    margin-bottom: 32px;
+    border-radius: 3px;
+    border-left: 4px solid #263f68;
+}
+
+.apresentacao h2 {
+    color: #263f68;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+}
+
+.reportagens {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e4ea;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.card > a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.foto {
+    height: 210px;
+    background-color: #e3e8ef;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto span {
+    display: none;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 20px;
+}
+
+.conteudo h3 {
+    color: #263f68;
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.conteudo p {
+    color: #526174;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #263f68;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.card:hover .botao {
+    background-color: #365789;
+}
+
+.reportagem {
+    max-width: 900px;
+}
+
+.reportagem article {
+    background-color: white;
+    padding: 34px;
+    border: 1px solid #e0e4ea;
+    border-radius: 3px;
+}
+
+.categoria {
+    color: #526d96;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.reportagem h2 {
+    color: #263f68;
+    font-size: 31px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.subtitulo {
+    color: #526174;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.autoria {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.reportagem article > figure {
+    margin: 0 0 32px;
+}
+
+.foto-grande {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: #e3eaf4;
+}
+
+.foto-grande img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reportagem section {
+    margin-bottom: 32px;
+}
+
+.reportagem section h3 {
+    color: #263f68;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 13px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #dce5f2;
+}
+
+.reportagem section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.reportagem section ul {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+.reportagem section li {
+    margin-bottom: 12px;
+}
+
+.reportagem section li a {
+    color: #263f68;
+    font-weight: bold;
+}
+
+.reportagem section li a:hover {
+    color: #5278b0;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.galeria figure {
+    margin: 0;
+    height: 190px;
+    background-color: #e3eaf4;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.galeria img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #263f68;
+    color: white;
+    text-align: center;
+    padding: 22px 20px;
+    margin-top: 45px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+    .reportagens {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .reportagem article {
+        padding: 28px;
+    }
+
+    .foto-grande {
+        height: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 22px 5%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 3px;
+        padding: 8px 4%;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 92%;
+        margin: 22px auto;
+    }
+
+    .apresentacao {
+        padding: 22px;
+    }
+
+    .apresentacao h2 {
+        font-size: 24px;
+    }
+
+    .reportagens {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .foto {
+        height: 220px;
+    }
+
+    .reportagem article {
+        padding: 21px;
+    }
+
+    .reportagem h2 {
+        font-size: 25px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    .foto-grande {
+        height: 230px;
+    }
+
+    .reportagem section h3 {
+        font-size: 20px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria figure {
+        height: 230px;
+    }
+
+    footer {
+        padding: 22px 15px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+.reportagem article > figure figcaption {
+    color: #526174;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.galeria figure {
+    height: auto;
+}
+
+.galeria img {
+    height: 190px;
+}
+
+.galeria figcaption {
+    color: #526174;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 7px 8px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .galeria img {
+        height: 230px;
+    }
+}
